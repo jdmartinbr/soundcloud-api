@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundcloud API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="mt-5 header-title">
+            <h1 id="title">SoundCloud API </h1>
+            <p>Haz una búsqueda y luego arrastra la carátula al reproductor. La canción sonará automáticamente.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="input-wrapper">
+            <div class="container">
+                <div class="input-content d-flex">
+                    <div class="input-group mb-4">
+                        <input id="songToQuery" type="text" class="form-control" placeholder="¿Qué quieres buscar?" aria-label="" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button id="searchSongs" class="btn btn-outline-secondary" type="button">Buscar</button>
+                        </div>
+                    </div>
+                    <div class="input-group mb-4 ml-3">
+                        <input id="input-song" type="text" class="form-control" placeholder="Arrastra aquí la carátula" ondrop="drop(event)" ondragover="allowDrop(event)" aria-label="" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button id="streamTrack" class="d-flex btn btn-outline-secondary" type="button"><i id="sound" class="material-icons">play_circle_outline</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="main-wrapper">
+            <div class="container">
+                <div class="main-content">
+                    <div id="songList" class="row title-content d-flex justify-content-between">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+</body>
+</html>
