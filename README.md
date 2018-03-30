@@ -5,4 +5,4 @@
 
 ### Uso.
 * Debes introducir tu ID de usuario de Soundcloud para poder utilizarlo.
-* Insértalo en el archivo: /assets/script.js:28
+* Insértalo en el archivo: /assets/js/script.js:28
