@@ -1,8 +1,12 @@
-# SoundCloud API
-### Ejercicio de prueba combinando el uso de Drag & Drop y la API pública de SoundCloud.
+# HTML 5 API & SoundCloud API
+### Project testing HTML 5 utility (Drag & Drop) and the Soundcloud public API.
+A simple music player.
+* Search something
+* Choose your favourite cover
+* Enjoy the music!
 
 ---
 
-### Uso.
-* Debes introducir tu ID de usuario de Soundcloud para poder utilizarlo.
-* Insértalo en el archivo: /assets/js/script.js:28
+### Config.
+* You need your Soundcloud ID User.
+* Put it into: /assets/js/script.js:28

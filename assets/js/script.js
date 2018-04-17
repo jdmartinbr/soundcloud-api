@@ -25,7 +25,7 @@ $(document).ready(function() {
     let titles = [];
 
     SC.initialize({
-        client_id: 'ID de cliente',
+        client_id: 'YOUR CLIENT ID',
     });
 
     $(document).bind('keypress', function(e) {
